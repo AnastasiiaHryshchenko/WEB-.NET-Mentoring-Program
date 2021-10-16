@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Northwind.Core.Category>
+@{
+    ViewData["Title"] = "Categories";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Category</title>
+</head>
+<body>    
+        @foreach (var category in Model)
+        {
+            <h3>@category.CategoryName</h3>
+        }    
+</body>
+</html>

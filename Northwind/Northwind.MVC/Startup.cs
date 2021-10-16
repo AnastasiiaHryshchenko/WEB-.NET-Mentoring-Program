@@ -23,10 +23,9 @@ namespace Northwind.MVC
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
-        {           
-            string connection = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<NorthwindContext>(options =>
-                options.UseSqlServer(connection));
+        {
+            string connection = Configuration.GetConnectionString("NorthwindConnection");
+            services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(connection));
             services.AddControllersWithViews();
         }
 
@@ -41,12 +40,10 @@ namespace Northwind.MVC
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-            app.UseHttpsRedirection();
+            
             app.UseStaticFiles();
 
-            app.UseRouting();
-
-            app.UseAuthorization();
+            app.UseRouting();            
 
             app.UseEndpoints(endpoints =>
             {

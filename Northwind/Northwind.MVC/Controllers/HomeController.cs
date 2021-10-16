@@ -8,15 +8,10 @@ using Northwind.Core;
 namespace Northwind.MVC.Controllers
 {
     public class HomeController : Controller
-    {
-        NorthwindContext db;
-        public HomeController(NorthwindContext context)
-        {
-            db = context;
-        }
+    {        
         public IActionResult Index()
         {
-            return View(db.Products.ToList());
+            return View();
         }        
     }
 }
