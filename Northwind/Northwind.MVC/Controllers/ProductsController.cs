@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Northwind.Core;
 using System;
 using System.Collections.Generic;
@@ -15,8 +16,8 @@ namespace Northwind.MVC.Controllers
             db = context;
         }
         public IActionResult Products()
-        {           
-            return View("~/Views/Home/Products.cshtml", db.Products.ToList());
+        {
+            return View("~/Views/Home/Products.cshtml", db.Products.Include(u => u.Category).Include(u => u.Supplier).ToList());
         }
     }
 }
