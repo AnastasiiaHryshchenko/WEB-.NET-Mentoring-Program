@@ -26,6 +26,14 @@
     <td>@product.UnitsOnOrder</td>
     <td>@product.ReorderLevel</td>
     <td>@product.Discontinued</td>
+    <td>
+        |
+        <a href="~/Products/New" asp-action="New" asp-controller="Products" asp-route-id="@product.ProductId">New</a>
+    </td>
+    <td>
+        |
+        <a href="~/Products/Update/@product.ProductId" asp-action="Update" asp-controller="Products" asp-route-id="@product.ProductId">Update</a>
+    </td>
 </tr>
     }
 </table>
