@@ -70,9 +70,28 @@ namespace Northwind.MVC.Controllers
         }
         [HttpPost]
         public async Task<IActionResult> Update(Product product)
-        {           
-            db.Products.Update(product);
-            await db.SaveChangesAsync();
+        {            
+            if (string.IsNullOrEmpty(product.ProductName))
+            {
+                ModelState.AddModelError("ProductName", "Wrong name");
+            }
+            else if (product.ProductName.Length < 3)
+            {
+                ModelState.AddModelError("ProductName", "Invalid string length");
+            }
+            if (string.IsNullOrEmpty(product.QuantityPerUnit))
+            {
+                ModelState.AddModelError("QuantityPerUnit", "Doesn't contains null or empty values");
+            }
+            if (product.UnitsInStock > 1 && product.UnitsInStock < 10000)
+            {
+                ModelState.AddModelError("UnitsInStock", "Contains values in range 1-10000");
+            }
+            if (ModelState.IsValid)
+            {
+                db.Products.Update(product);
+                await db.SaveChangesAsync();
+            }                
             return View();
         }
 
