@@ -8,10 +8,20 @@
 <head>
     <title>Category</title>
 </head>
-<body>    
+<body>
+    <div style="display: flex; flex-flow: wrap; justify-content: center">
         @foreach (var category in Model)
         {
-            <h3>@category.CategoryName</h3>
-        }    
+        <div style="margin: 2rem">
+            <div class="card" style="width: 18rem;">
+                <img src="https://picsum.photos/id/237/200/300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@category.CategoryName</h5>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
 </body>
 </html>

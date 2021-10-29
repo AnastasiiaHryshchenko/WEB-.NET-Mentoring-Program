@@ -2,39 +2,41 @@
 @{
     ViewData["Title"] = "Products";
 }
-<table>
-    <tr>
-        <td>ProductName</td>
-        <td>Supplier</td>
-        <td>Category</td>
-        <td>QuantityPerUnit</td>
-        <td>UnitPrice</td>
-        <td>UnitsInStock</td>
-        <td>UnitsOnOrder</td>
-        <td>ReorderLevel</td>
-        <td>Discontinued</td>
-    </tr>
-    @foreach (var product in Model)
-    {
-<tr>
-    <td>@product.ProductName</td>
-    <td>@product.Supplier?.CompanyName</td>
-    <td>@product.Category?.CategoryName</td>
-    <td>@product.QuantityPerUnit</td>
-    <td>@product.UnitPrice</td>
-    <td>@product.UnitsInStock</td>
-    <td>@product.UnitsOnOrder</td>
-    <td>@product.ReorderLevel</td>
-    <td>@product.Discontinued</td>
-    <td>
-        |
-        <a href="~/Products/New" asp-action="New" asp-controller="Products" asp-route-id="@product.ProductId">New</a>
-    </td>
-    <td>
-        |
-        <a href="~/Products/Update/@product.ProductId" asp-action="Update" asp-controller="Products" asp-route-id="@product.ProductId">Update</a>
-    </td>
-</tr>
-    }
+<table class="table">
+    <thead>
+        <tr scope="col">
+            <td>ProductName</td>
+            <td>Supplier</td>
+            <td>Category</td>
+            <td>QuantityPerUnit</td>
+            <td>UnitPrice</td>
+            <td>UnitsInStock</td>
+            <td>UnitsOnOrder</td>
+            <td>ReorderLevel</td>
+            <td>Discontinued</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr scope="row">
+                <td>@product.ProductName</td>
+                <td>@product.Supplier?.CompanyName</td>
+                <td>@product.Category?.CategoryName</td>
+                <td>@product.QuantityPerUnit</td>
+                <td>@product.UnitPrice</td>
+                <td>@product.UnitsInStock</td>
+                <td>@product.UnitsOnOrder</td>
+                <td>@product.ReorderLevel</td>
+                <td>@product.Discontinued</td>
+                <td>                    
+                    <a class="btn btn-dark" href="~/Products/New" asp-action="New" asp-controller="Products" asp-route-id="@product.ProductId">New</a>
+                </td>
+                <td>                    
+                    <a class="btn btn-dark" href="~/Products/Update/@product.ProductId" asp-action="Update" asp-controller="Products" asp-route-id="@product.ProductId">Update</a>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
 
