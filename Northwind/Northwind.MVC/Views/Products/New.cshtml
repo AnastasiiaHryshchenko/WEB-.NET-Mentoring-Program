@@ -2,57 +2,67 @@
 @{
     ViewData["Title"] = "ProductsNew";
 }
-<form method="post" asp-action="New" asp-controller="Products" >    
-    <div class="form-group">
-        <label asp-for="ProductName" class="control-label">ProductName</label>
-        <input type="text" name="ProductName" class="form-control" />
-    </div>
-    <div class="form-group">
-
-        <label asp-for="SupplierName" class="control-label">SupplierName</label>
-        <select name="SupplierId" class="form-control">
-            @foreach (var supplier in Model.Suppliers)
-            {
-                <option value="@supplier.SupplierId">@supplier.CompanyName</option>
-            }
-        </select>
-    </div>
-    <div class="form-group">
-        <label asp-for="CategoryName" class="control-label">CategoryName</label>
-        <select name="CategoryId" class="form-control">
-            @foreach (var category in Model.Categories)
-            {
-                <option value="@category.CategoryId">@category.CategoryName</option>
-            }
-        </select>
-    </div>
-    <div class="form-group">
-        <label asp-for="QuantityPerUnit" class="control-label">QuantityPerUnit</label>
-        <input type="text" name="QuantityPerUnit" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="UnitPrice" class="control-label">UnitPrice</label>
-        <input type="number" name="UnitPrice" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="UnitsInStock" class="control-label">UnitsInStock</label>
-        <input type="number" name="UnitsInStock" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="UnitsOnOrder" class="control-label">UnitsOnOrder</label>
-        <input type="number" name="UnitsOnOrder" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="ReorderLevel" class="control-label">ReorderLevel</label>
-        <input type="number" name="ReorderLevel" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Discontinued" class="control-label">Discontinued</label>
-        <input type="text" name="Discontinued" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <input type="submit" value="Submit" class="btn btn-default" />
+<form method="post" asp-action="New" asp-controller="Products" > 
+    <div class="container" style="display: flex; flex-flow: wrap; justify-content: center">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="ProductName" class="control-label">ProductName</label>
+                    <input type="text" name="ProductName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="SupplierName" class="control-label">SupplierName</label>
+                    <select name="SupplierId" class="form-control">
+                        @foreach (var supplier in Model.Suppliers)
+                        {
+                            <option value="@supplier.SupplierId">@supplier.CompanyName</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CategoryName" class="control-label">CategoryName</label>
+                    <select name="CategoryId" class="form-control">
+                        @foreach (var category in Model.Categories)
+                        {
+                            <option value="@category.CategoryId">@category.CategoryName</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="QuantityPerUnit" class="control-label">QuantityPerUnit</label>
+                    <input type="text" name="QuantityPerUnit" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="UnitPrice" class="control-label">UnitPrice</label>
+                    <input type="number" name="UnitPrice" class="form-control" />
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="UnitsInStock" class="control-label">UnitsInStock</label>
+                    <input type="number" name="UnitsInStock" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="UnitsOnOrder" class="control-label">UnitsOnOrder</label>
+                    <input type="number" name="UnitsOnOrder" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="ReorderLevel" class="control-label">ReorderLevel</label>
+                    <input type="number" name="ReorderLevel" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Discontinued" class="control-label">Discontinued</label>
+                    <input type="text" name="Discontinued" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <input class="btn btn-dark" type="submit" value="Submit" />
+                </div>
+            </div>
+        </div>  
     </div>
 </form>
 
