@@ -51,7 +51,7 @@ namespace Northwind.MVC.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> New(Product product)
+        public IActionResult New(Product product)
         {            
             db.Products.Add(product);            
             db.SaveChanges();

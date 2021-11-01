@@ -14,6 +14,7 @@
             <td>UnitsOnOrder</td>
             <td>ReorderLevel</td>
             <td>Discontinued</td>
+            <td><a class="btn btn-dark" href="~/Products/New" asp-action="New" asp-controller="Products" asp-route-id="Model.ProductId">New</a></td>
         </tr>
     </thead>
     <tbody>
@@ -28,10 +29,7 @@
                 <td>@product.UnitsInStock</td>
                 <td>@product.UnitsOnOrder</td>
                 <td>@product.ReorderLevel</td>
-                <td>@product.Discontinued</td>
-                <td>                    
-                    <a class="btn btn-dark" href="~/Products/New" asp-action="New" asp-controller="Products" asp-route-id="@product.ProductId">New</a>
-                </td>
+                <td>@product.Discontinued</td>               
                 <td>                    
                     <a class="btn btn-dark" href="~/Products/Update/@product.ProductId" asp-action="Update" asp-controller="Products" asp-route-id="@product.ProductId">Update</a>
                 </td>

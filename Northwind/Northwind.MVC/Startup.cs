@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Northwind.Core;
 using Northwind.MVC.Logging;
+using Northwind.MVC.Model;
 
 namespace Northwind.MVC
 {
@@ -44,14 +47,30 @@ namespace Northwind.MVC
             }
             else
             {
-                app.UseExceptionHandler("/ErrorModel");
+                app.UseExceptionHandler(appError =>
+                {
+                    appError.Run(async context =>
+                    {
+                        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                        var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
+                        if (contextFeature != null)
+                        {
+                            logger.LogError($"Something went wrong: {contextFeature.Error}");
+                            await context.Response.WriteAsync(new ErrorDetails()
+                            {
+                                StatusCode = context.Response.StatusCode,
+                                Message = "Internal Server Error."
+                            }.ToString());
+                        }
+                    });
+                });
                 app.UseHsts();
             }
             
             app.UseStaticFiles();
 
-            app.UseRouting();                       
-            
+            app.UseRouting();            
+
             app.Use(async (context, next) =>
             {
                 logger.LogInformation("Processing request {0}", context.Request.Path);
