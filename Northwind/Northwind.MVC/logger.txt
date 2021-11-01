@@ -1,0 +1,42 @@
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Products/Products
+Processing request /Products/Update/1
+Processing request /Products/Update/1
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Products/Products
+Processing request /Products/Update/1
+Processing request /Products/Update/1
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Products/Products
+Processing request /Products/Update/1
+Processing request /Products/Update/1
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Categories/Categories
+Processing request /Home/Index
+Processing request /Categories/Categories
+Processing request /Products/Products
+Processing request /Products/Update/1
+Processing request /Products/Update/1
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Products/Products
+Processing request /Products/Update/1
+Processing request /Products/Update/1
+An unhandled exception has occurred while executing the request.
