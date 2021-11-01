@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -12,6 +13,7 @@ namespace Northwind.Core
             OrderDetails = new HashSet<OrderDetail>();
         }
 
+        [Required(ErrorMessage = "Doesn't contains null or empty values")]
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public int? SupplierId { get; set; }
@@ -21,8 +23,9 @@ namespace Northwind.Core
         public short? UnitsInStock { get; set; }
         public short? UnitsOnOrder { get; set; }
         public short? ReorderLevel { get; set; }
+        [Required(ErrorMessage = "Doesn't contains null or empty values")]
         public bool Discontinued { get; set; }
-
+        
         public virtual Category Category { get; set; }
         public virtual Supplier Supplier { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }

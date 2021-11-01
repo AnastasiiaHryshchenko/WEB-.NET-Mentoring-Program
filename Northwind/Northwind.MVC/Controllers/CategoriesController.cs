@@ -16,7 +16,7 @@ namespace Northwind.MVC.Controllers
         }
         public IActionResult Categories()
         {         
-            return View("~/Views/Home/Categories.cshtml", db.Categories.ToList());
+            return View("Categories", db.Categories.ToList());
         }
     }
 }
