@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -9,7 +10,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Northwind.Core;
+using Northwind.MVC.Logging;
 
 namespace Northwind.MVC
 {
@@ -29,8 +32,11 @@ namespace Northwind.MVC
             services.AddControllersWithViews();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logger.txt"));
+            var logger = loggerFactory.CreateLogger("FileLogger");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -43,10 +49,16 @@ namespace Northwind.MVC
             
             app.UseStaticFiles();
 
-            app.UseRouting();            
+            app.UseRouting();                       
+            
+            app.Use(async (context, next) =>
+            {
+                logger.LogInformation("Processing request {0}", context.Request.Path);
+                await next.Invoke();
+            });
 
             app.UseEndpoints(endpoints =>
-            {
+            {            
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
