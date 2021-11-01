@@ -55,7 +55,7 @@ namespace Northwind.MVC.Controllers
         {            
             db.Products.Add(product);            
             db.SaveChanges();
-            return View("Products");           
+            return RedirectToAction("Products");           
         }
         [HttpGet]
         public IActionResult Update(int id)
