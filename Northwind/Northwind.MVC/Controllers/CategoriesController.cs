@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Northwind.Core;
+using NorthwindBL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +10,15 @@ namespace Northwind.MVC.Controllers
 {
     public class CategoriesController : Controller
     {
-        NorthwindContext db;
-        public CategoriesController(NorthwindContext context)
+        private readonly IDatabaseManipulation _dateFromCategory;
+
+        public CategoriesController(IDatabaseManipulation dateFromCategory)
         {
-            db = context;
+            _dateFromCategory = dateFromCategory;
         }
         public IActionResult Categories()
         {         
-            return View("Categories", db.Categories.ToList());
+            return View("Categories", _dateFromCategory.CategoryList);
         }
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\bin\Debug\netcoreapp3.1\NorthwindBL.deps.json
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\bin\Debug\netcoreapp3.1\NorthwindBL.runtimeconfig.json
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\bin\Debug\netcoreapp3.1\NorthwindBL.runtimeconfig.dev.json
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\bin\Debug\netcoreapp3.1\NorthwindBL.dll
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\bin\Debug\netcoreapp3.1\NorthwindBL.pdb
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\bin\Debug\netcoreapp3.1\Northwind.Core.Data.dll
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\bin\Debug\netcoreapp3.1\Northwind.Core.Data.pdb
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.csproj.AssemblyReference.cache
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.AssemblyInfoInputs.cache
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.AssemblyInfo.cs
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.csproj.CoreCompileInputs.cache
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.dll
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.pdb
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.genruntimeconfig.cache

@@ -35,6 +35,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "5.0.11",
           "Microsoft.jQuery.Unobtrusive.Validation": "3.2.12",
           "Northwind.Core.Data": "1.0.0",
+          "NorthwindBL": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -1418,6 +1419,18 @@
         },
         "compile": {
           "Northwind.Core.Data.dll": {}
+        }
+      },
+      "NorthwindBL/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
+          "Northwind.Core.Data": "1.0.0"
+        },
+        "runtime": {
+          "NorthwindBL.dll": {}
+        },
+        "compile": {
+          "NorthwindBL.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3749,6 +3762,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "Northwind.Core.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NorthwindBL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
