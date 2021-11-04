@@ -24,3 +24,15 @@ Processing request /Products/Products
 Processing request /Products/Update/102
 Processing request /Products/Update/102
 Processing request /Products/Products
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Products/Products
+Processing request /Products/Update/1
+Processing request /Products/Update/1
+Processing request /Products/Products
+Processing request /Products/Update/1
+Processing request /Products/Update/1
+Processing request /Products/Products
+Processing request /Products/New
