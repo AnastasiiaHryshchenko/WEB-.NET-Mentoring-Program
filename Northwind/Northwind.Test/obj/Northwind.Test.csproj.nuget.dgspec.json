@@ -4,14 +4,14 @@
     "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Test\\Northwind.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Test\\Northwind.Test.csproj": {
+    "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Core.Data\\Northwind.Core.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Test\\Northwind.Test.csproj",
-        "projectName": "Northwind.Test",
-        "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Test\\Northwind.Test.csproj",
+        "projectUniqueName": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Core.Data\\Northwind.Core.Data.csproj",
+        "projectName": "Northwind.Core.Data",
+        "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Core.Data\\Northwind.Core.Data.csproj",
         "packagesPath": "C:\\Users\\Anastasiia_Hryshchen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Test\\obj\\",
+        "outputPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Core.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anastasiia_Hryshchen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,170 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.MVC\\Northwind.MVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.MVC\\Northwind.MVC.csproj",
+        "projectName": "Northwind.MVC",
+        "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.MVC\\Northwind.MVC.csproj",
+        "packagesPath": "C:\\Users\\Anastasiia_Hryshchen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.MVC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Anastasiia_Hryshchen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Core.Data\\Northwind.Core.Data.csproj": {
+                "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Core.Data\\Northwind.Core.Data.csproj"
+              },
+              "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\NorthwindBL\\NorthwindBL.csproj": {
+                "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\NorthwindBL\\NorthwindBL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.jQuery.Unobtrusive.Validation": {
+              "target": "Package",
+              "version": "[3.2.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Test\\Northwind.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Test\\Northwind.Test.csproj",
+        "projectName": "Northwind.Test",
+        "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Test\\Northwind.Test.csproj",
+        "packagesPath": "C:\\Users\\Anastasiia_Hryshchen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Anastasiia_Hryshchen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.MVC\\Northwind.MVC.csproj": {
+                "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.MVC\\Northwind.MVC.csproj"
+              },
+              "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\NorthwindBL\\NorthwindBL.csproj": {
+                "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\NorthwindBL\\NorthwindBL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.5.5, )"
             },
             "NUnit": {
               "target": "Package",
@@ -55,6 +216,80 @@
             "coverlet.collector": {
               "target": "Package",
               "version": "[3.0.2, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\NorthwindBL\\NorthwindBL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\NorthwindBL\\NorthwindBL.csproj",
+        "projectName": "NorthwindBL",
+        "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\NorthwindBL\\NorthwindBL.csproj",
+        "packagesPath": "C:\\Users\\Anastasiia_Hryshchen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\NorthwindBL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Anastasiia_Hryshchen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Core.Data\\Northwind.Core.Data.csproj": {
+                "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Core.Data\\Northwind.Core.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
             }
           },
           "imports": [

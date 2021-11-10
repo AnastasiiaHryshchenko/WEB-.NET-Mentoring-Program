@@ -13,5 +13,6 @@ namespace NorthwindBL
 
         void NewProduct(Product product);
         void UpdateProduct(Product product);
+        void CategoryList();
     }
 }
