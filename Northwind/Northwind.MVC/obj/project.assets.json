@@ -1549,6 +1549,20 @@
         "runtime": {
           "bin/placeholder/Northwind.Core.Data.dll": {}
         }
+      },
+      "NorthwindBL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
+          "Northwind.Core.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NorthwindBL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NorthwindBL.dll": {}
+        }
       }
     }
   },
@@ -5868,6 +5882,11 @@
       "type": "project",
       "path": "../Northwind.Core.Data/Northwind.Core.Data.csproj",
       "msbuildProject": "../Northwind.Core.Data/Northwind.Core.Data.csproj"
+    },
+    "NorthwindBL/1.0.0": {
+      "type": "project",
+      "path": "../NorthwindBL/NorthwindBL.csproj",
+      "msbuildProject": "../NorthwindBL/NorthwindBL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5875,7 +5894,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.11",
       "Microsoft.jQuery.Unobtrusive.Validation >= 3.2.12",
-      "Northwind.Core.Data >= 1.0.0"
+      "Northwind.Core.Data >= 1.0.0",
+      "NorthwindBL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5907,6 +5927,9 @@
           "projectReferences": {
             "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Core.Data\\Northwind.Core.Data.csproj": {
               "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\Northwind.Core.Data\\Northwind.Core.Data.csproj"
+            },
+            "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\NorthwindBL\\NorthwindBL.csproj": {
+              "projectPath": "C:\\Users\\Anastasiia_Hryshchen\\Desktop\\.net repos\\WEB-.NET-Mentoring-Program\\Northwind\\NorthwindBL\\NorthwindBL.csproj"
             }
           }
         }
