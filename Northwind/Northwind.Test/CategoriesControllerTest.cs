@@ -22,14 +22,14 @@ namespace Northwind.Test
         //    Assert.Pass();
         //}
 
-        //[Fact]
-        //public async Task Categories_ReturnsAViewResult__WithAListOfCategories()
-        //{
-        //    var mokRepo = new Mock<IDatabaseManipulation>();
-        //    //mokRepo.Setup(repo => repo.CategoryList()).ReturnsAsync(GetTestSessions());
-        //    var categorycontroller = new CategoriesController(mokRepo.Object);
+        [Fact]
+        public async Task Categories_ReturnsAViewResult__WithAListOfCategories()
+        {
+            var mokRepo = new Mock<IDatabaseManipulation>();
+            //mokRepo.Setup(repo => repo.CategoryList()).ReturnsAsync(GetTestSessions());
+            var categorycontroller = new CategoriesController(mokRepo.Object);
 
-        //}
+        }
         //private List<DatabaseManipulation> GetTestSessions()
         //{
         //    return

@@ -12,7 +12,6 @@ namespace NorthwindBL
         List<Supplier> SupplierList { get; }
 
         void NewProduct(Product product);
-        void UpdateProduct(Product product);
-        void CategoryList();
+        void UpdateProduct(Product product);        
     }
 }
