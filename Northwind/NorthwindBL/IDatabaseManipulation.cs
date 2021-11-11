@@ -9,10 +9,9 @@ namespace NorthwindBL
     {
         List<Category> CategoryList { get; }
         List<Product> ProductList { get; }
-        List<Supplier> SupplierList { get; }
+        List<Supplier> SupplierList { get; }        
 
         void NewProduct(Product product);
-        void UpdateProduct(Product product);
-        void CategoryList();
+        void UpdateProduct(Product product);       
     }
 }
