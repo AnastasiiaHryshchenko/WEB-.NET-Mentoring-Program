@@ -10,3 +10,4 @@ C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Nort
 C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.Core.Data\obj\Debug\netcoreapp3.1\Northwind.Core.Data.dll
 C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.Core.Data\obj\Debug\netcoreapp3.1\Northwind.Core.Data.pdb
 C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.Core.Data\obj\Debug\netcoreapp3.1\Northwind.Core.Data.genruntimeconfig.cache
+C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.Core.Data\obj\Debug\netcoreapp3.1\Northwind.Core.Data.csproj.AssemblyReference.cache
