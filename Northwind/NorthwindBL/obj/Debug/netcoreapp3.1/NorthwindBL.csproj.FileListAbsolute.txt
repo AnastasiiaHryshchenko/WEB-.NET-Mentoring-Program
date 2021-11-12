@@ -13,4 +13,3 @@ C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Nort
 C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.dll
 C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.pdb
 C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.genruntimeconfig.cache
-C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\NorthwindBL\obj\Debug\netcoreapp3.1\NorthwindBL.csproj.CopyComplete

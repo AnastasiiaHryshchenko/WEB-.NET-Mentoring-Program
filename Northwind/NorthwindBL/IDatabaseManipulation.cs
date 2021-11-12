@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Claims;
 using System.Text;
+using System.Threading.Tasks;
 using Northwind.Core;
 
 namespace NorthwindBL
@@ -12,6 +14,7 @@ namespace NorthwindBL
         List<Supplier> SupplierList { get; }
 
         void NewProduct(Product product);
-        void UpdateProduct(Product product);        
+        void UpdateProduct(Product product);
+        List<Category> FindImage(int id); 
     }
 }

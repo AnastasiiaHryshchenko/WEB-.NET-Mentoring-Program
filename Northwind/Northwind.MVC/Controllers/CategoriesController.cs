@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Northwind.Core;
+using Northwind.MVC.Model;
 using NorthwindBL;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -16,6 +18,7 @@ namespace Northwind.MVC.Controllers
         {
             _dateFromCategory = dateFromCategory;
         }
+
         public IActionResult Categories()
         {         
             return View("Categories", _dateFromCategory.CategoryList);

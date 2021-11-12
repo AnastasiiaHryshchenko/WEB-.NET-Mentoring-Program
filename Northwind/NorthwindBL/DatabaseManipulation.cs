@@ -19,7 +19,7 @@ namespace NorthwindBL
         public List<Category> CategoryList
         {
             get { return db.Categories.OrderBy(c => c.CategoryName).ToList(); }
-        }
+        }        
         public List<Product> ProductList
         {
             get { return db.Products.Include(u => u.Category).Include(u => u.Supplier).ToList(); }
@@ -28,8 +28,8 @@ namespace NorthwindBL
         public List<Supplier> SupplierList
         {
             get { return db.Suppliers.OrderBy(s => s.CompanyName).ToList(); }
-        }
-        
+        }          
+
         public void NewProduct(Product product)
         {
             db.Products.Add(product);
@@ -39,6 +39,10 @@ namespace NorthwindBL
         {
             db.Products.Update(product);
             db.SaveChanges();
+        }
+        public List<Category> FindImage(int id)
+        {
+            return db.Categories.Where(c => c.CategoryId == id).ToList();       
         }
     }
 }
