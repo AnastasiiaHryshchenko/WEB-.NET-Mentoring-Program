@@ -149,3 +149,75 @@ Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Men
 Processing request /
 Processing request /Categories/Categories
 Processing request /Categories/Categories
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Categories/Categories
+Processing request /Categories/Update/1
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Categories/Categories
+Processing request /Categories/Update/1
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Categories/Categories
+Processing request /Categories/Update/1
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Categories/Categories
+Processing request /Categories/Update/1
+Processing request /Categories/Update/System.Collections.Generic.List%601%5BSystem.Byte%5D
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Categories/Categories
+Processing request /Categories/Update/1
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Categories/Categories
+Processing request /Categories/Update/1
+Processing request /Categories/Update/1
+Processing request /Categories/Categories
+Processing request /Categories/Update/2
+Processing request /Categories/Update/2
+Processing request /Categories/Categories
+Processing request /Categories/Update/2
+Processing request /Categories/Update/2
+Processing request /Categories/Categories
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Categories/Categories
+Processing request /Categories/Update/2
+Processing request /Categories/Update/2
+Processing request /Categories/Categories
+Processing request /Categories/Update/1
+Processing request /Categories/Update/1
+Processing request /Categories/Categories
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Categories/Categories
+Processing request /Categories/Update/1
+Processing request /Categories/Update/1
+Processing request /Categories/Categories
+Processing request /Categories/Categories
+Processing request /Categories/Categories
+Processing request /Categories/Categories
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Categories/Categories

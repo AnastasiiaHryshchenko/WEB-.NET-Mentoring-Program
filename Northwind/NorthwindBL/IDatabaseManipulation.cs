@@ -15,6 +15,7 @@ namespace NorthwindBL
 
         void NewProduct(Product product);
         void UpdateProduct(Product product);
+        void UpdateCategory(Category category);
         List<Category> FindImage(int id); 
     }
 }

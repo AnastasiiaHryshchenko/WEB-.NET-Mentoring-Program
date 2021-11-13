@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Northwind.MVC.Controllers
@@ -23,5 +24,26 @@ namespace Northwind.MVC.Controllers
         {         
             return View("Categories", _dateFromCategory.CategoryList);
         }
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            ProductListViewModel viewModel = new ProductListViewModel
+            {
+                Products = null,
+                Suppliers = null,
+                Categories = _dateFromCategory.CategoryList.Where(p => p.CategoryId == id).ToList()
+            };
+            return View("Update", viewModel);
+        }
+        [HttpPost]
+        public IActionResult Update(Category category)
+        {             
+            if (ModelState.IsValid)
+            {
+                _dateFromCategory.UpdateCategory (category);
+            }
+            return RedirectToAction("Categories");
+        }
+
     }
 }

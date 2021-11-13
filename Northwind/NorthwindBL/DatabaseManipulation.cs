@@ -40,6 +40,13 @@ namespace NorthwindBL
             db.Products.Update(product);
             db.SaveChanges();
         }
+
+        public void UpdateCategory(Category category)
+        {
+            db.Categories.Update(category);
+            db.SaveChanges();
+        }
+
         public List<Category> FindImage(int id)
         {
             return db.Categories.Where(c => c.CategoryId == id).ToList();       
