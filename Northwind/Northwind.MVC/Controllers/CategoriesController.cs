@@ -25,6 +25,8 @@ namespace Northwind.MVC.Controllers
             return View("Categories", _dateFromCategory.CategoryList);
         }
         [HttpGet]
+        [Route("Categories/Update/{id?}")]
+        [Route("Categories/Update/images/{id?}")]
         public IActionResult Update(int id)
         {
             ProductListViewModel viewModel = new ProductListViewModel
@@ -36,6 +38,8 @@ namespace Northwind.MVC.Controllers
             return View("Update", viewModel);
         }
         [HttpPost]
+        [Route("Categories/Update/{id?}")]
+        [Route("Categories/Update/images/{id?}")]
         public IActionResult Update(Category category)
         {  
             _dateFromCategory.UpdateCategory (category);            
