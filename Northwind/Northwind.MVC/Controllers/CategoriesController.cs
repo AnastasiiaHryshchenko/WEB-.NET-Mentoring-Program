@@ -37,11 +37,8 @@ namespace Northwind.MVC.Controllers
         }
         [HttpPost]
         public IActionResult Update(Category category)
-        {             
-            if (ModelState.IsValid)
-            {
-                _dateFromCategory.UpdateCategory (category);
-            }
+        {  
+            _dateFromCategory.UpdateCategory (category);            
             return RedirectToAction("Categories");
         }
 
