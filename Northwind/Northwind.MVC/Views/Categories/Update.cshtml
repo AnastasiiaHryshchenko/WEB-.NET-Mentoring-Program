@@ -1,0 +1,60 @@
+﻿@model Northwind.MVC.Model.ProductListViewModel
+@{
+    ViewData["Title"] = "CategoryUpdate";
+}
+@foreach (var category in Model.Categories)
+{
+<form method="post" asp-action="Update" asp-controller="Products" asp-route-id="@category.CategoryId">
+    <div class="container" style="display: flex; flex-flow: wrap; justify-content: center">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="CategoryId" class="control-label">CategoryId</label>
+                    <input type="number" name="CategoryId" class="form-control is-valid" value="@category.CategoryId" required />
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter id.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CategoryName" class="control-label">CategoryName</label>
+                    <input type="text" name="CategoryName" class="form-control is-valid" value="@category.CategoryName" required />
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter name.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label">Description</label>
+                    <input type="text" name="Description" class="form-control is-valid" value="@category.Description" required />
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter name.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Picture" class="control-label">Picture</label>                    
+                    <input name="Picture" type="file">                   
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter name.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="display: flex; flex-flow: wrap; justify-content: center">        
+        <div class="form-group">
+            <input class="btn btn-dark" type="submit" value="Submit" />
+        </div>       
+    </div>
+</form>
+}

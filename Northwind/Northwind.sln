@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.MVC", "Northwind.MVC\Northwind.MVC.csproj", "{6A8CA4E1-8C1E-4793-98F0-01051F4120A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.MVC", "Northwind.MVC\Northwind.MVC.csproj", "{6A8CA4E1-8C1E-4793-98F0-01051F4120A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Core.Data", "Northwind.Core.Data\Northwind.Core.Data.csproj", "{C00E401F-5277-41D9-86E6-DEDB57DCCCC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Core.Data", "Northwind.Core.Data\Northwind.Core.Data.csproj", "{C00E401F-5277-41D9-86E6-DEDB57DCCCC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindBL", "NorthwindBL\NorthwindBL.csproj", "{D027521A-ADC2-4FDC-B390-DE7F08210C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Test", "Northwind.Test\Northwind.Test.csproj", "{C0D1FB06-B3DF-4584-A907-C74FEF6B3DAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{C00E401F-5277-41D9-86E6-DEDB57DCCCC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C00E401F-5277-41D9-86E6-DEDB57DCCCC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C00E401F-5277-41D9-86E6-DEDB57DCCCC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D027521A-ADC2-4FDC-B390-DE7F08210C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D027521A-ADC2-4FDC-B390-DE7F08210C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D027521A-ADC2-4FDC-B390-DE7F08210C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D027521A-ADC2-4FDC-B390-DE7F08210C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0D1FB06-B3DF-4584-A907-C74FEF6B3DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D1FB06-B3DF-4584-A907-C74FEF6B3DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D1FB06-B3DF-4584-A907-C74FEF6B3DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D1FB06-B3DF-4584-A907-C74FEF6B3DAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

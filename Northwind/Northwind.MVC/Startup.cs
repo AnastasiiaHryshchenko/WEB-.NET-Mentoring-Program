@@ -16,6 +16,7 @@ using Microsoft.Extensions.Logging;
 using Northwind.Core;
 using Northwind.MVC.Logging;
 using Northwind.MVC.Model;
+using NorthwindBL;
 
 namespace Northwind.MVC
 {
@@ -32,6 +33,9 @@ namespace Northwind.MVC
         {
             string connection = Configuration.GetConnectionString("NorthwindConnection");
             services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(connection));
+
+            services.AddTransient<IDatabaseManipulation, DatabaseManipulation>();
+
             services.AddControllersWithViews();
         }
 
@@ -40,7 +44,7 @@ namespace Northwind.MVC
             loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logger.txt"));
             var logger = loggerFactory.CreateLogger("FileLogger");
 
-            env.ApplicationName = "Production";
+            //env.ApplicationName = "Production";
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -69,7 +73,7 @@ namespace Northwind.MVC
             
             app.UseStaticFiles();
 
-            app.UseRouting();            
+            app.UseRouting();
 
             app.Use(async (context, next) =>
             {
