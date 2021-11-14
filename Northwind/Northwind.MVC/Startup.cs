@@ -33,7 +33,9 @@ namespace Northwind.MVC
         {
             string connection = Configuration.GetConnectionString("NorthwindConnection");
             services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(connection));
+
             services.AddTransient<IDatabaseManipulation, DatabaseManipulation>();
+
             services.AddControllersWithViews();
         }
 
