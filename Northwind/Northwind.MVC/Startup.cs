@@ -70,7 +70,8 @@ namespace Northwind.MVC
                 });
                 app.UseHsts();
             }
-            
+
+            app.UseMiddleware<ImageMiddleware>();
             app.UseStaticFiles();
 
             app.UseRouting();
