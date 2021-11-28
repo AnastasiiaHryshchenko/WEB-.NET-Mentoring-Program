@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col">
                 <div class="form-group">
-                    <label asp-for="ProductId" class="control-label">ProductId</label>
+                    <label  class="control-label">ProductId</label>
                     <input type="number" name="ProductId" class="form-control is-valid" value="@product.ProductId" required />
                     <div class="valid-feedback">
                         Looks good!
@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label asp-for="ProductName" class="control-label">ProductName</label>
+                    <label  class="control-label">ProductName</label>
                     <input type="text" name="ProductName" class="form-control is-valid" value="@product.ProductName" required />
                     <div class="valid-feedback">
                         Looks good!
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label asp-for="SupplierId" class="control-label">SupplierName</label>
+                    <label  class="control-label">SupplierName</label>
                     <select name="SupplierId" class="form-control">
                         <option selected value="@product.SupplierId">@product.Supplier.CompanyName</option>
                         @foreach (var supplier in Model.Suppliers)
@@ -39,7 +39,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label asp-for="CategoryId" class="control-label">CategoryName</label>
+                    <label  class="control-label">CategoryName</label>
                     <select name="CategoryId" class="form-control">
                         <option selected value="@product.CategoryId">@product.Category.CategoryName</option>
                         @foreach (var category in Model.Categories)
@@ -49,7 +49,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label asp-for="QuantityPerUnit" class="control-label">QuantityPerUnit</label>
+                    <label  class="control-label">QuantityPerUnit</label>
                     <input class="form-control is-valid" type="text" name="QuantityPerUnit" value="@product.QuantityPerUnit" required />
                     <div class="valid-feedback">
                         Looks good!
@@ -61,25 +61,25 @@
             </div>
             <div class="col">
                 <div class="form-group">
-                    <label asp-for="UnitPrice" class="control-label">UnitPrice</label>
+                    <label  class="control-label">UnitPrice</label>
                     <input type="number" name="UnitPrice" class="form-control" value="@product.UnitPrice" />
                 </div>
                 <div class="form-group">
-                    <label asp-for="UnitsInStock" class="control-label">UnitsInStock</label>
+                    <label  class="control-label">UnitsInStock</label>
                     <input type="number" name="UnitsInStock" class="form-control" value="@product.UnitsInStock" />
                 </div>
                 <div class="form-group">
-                    <label asp-for="UnitsOnOrder" class="control-label">UnitsOnOrder</label>
+                    <label  class="control-label">UnitsOnOrder</label>
                     <input type="number" name="UnitsOnOrder" class="form-control" value="@product.UnitsOnOrder" />
                 </div>
                 <div class="form-group">
-                    <label asp-for="ReorderLevel" class="control-label">ReorderLevel</label>
+                    <label  class="control-label">ReorderLevel</label>
                     <input type="number" name="ReorderLevel" class="form-control" value="@product.ReorderLevel" />
                 </div>
                 <div class="form-group">
-                    <label asp-for="Discontinued" class="control-label">Discontinued</label>
+                    <label  class="control-label">Discontinued</label>
                     <input type="text" name="Discontinued" class="form-control" value="@product.Discontinued.ToString()" />
-                    <span asp-validation-for="Discontinued"></span>
+                    <span ></span>
                 </div>
             </div>
         </div>        

@@ -295,3 +295,26 @@ Processing request /Categories/Categories
 Processing request /Categories/Update/1
 Processing request /Categories/Update/test/1
 Processing request /Categories/Update/images/1
+Application startup exception
+Application startup exception
+Application startup exception
+Application startup exception
+Application startup exception
+Application startup exception
+Application startup exception
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /favicon.ico
+Processing request /Products/Products
+Processing request /Categories/Categories
+Processing request /Home/Index
+Processing request /Categories/Categories
+Processing request /Products/Products
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\Anastasiia_Hryshchen\Desktop\.net repos\WEB-.NET-Mentoring-Program\Northwind\Northwind.MVC
+Processing request /
+Processing request /Products/Products
+An unhandled exception has occurred while executing the request.

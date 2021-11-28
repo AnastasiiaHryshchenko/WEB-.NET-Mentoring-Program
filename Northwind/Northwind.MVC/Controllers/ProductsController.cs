@@ -15,18 +15,18 @@ namespace Northwind.MVC.Controllers
     public class ProductsController : Controller
     {
         private readonly IConfiguration Configuration;
-        private readonly IDatabaseManipulation _dateFromCategory;
+        private readonly IDatabaseManipulation _databaseManipulation;
        
-        public ProductsController(IDatabaseManipulation dateFromCategory, IConfiguration configuration)
+        public ProductsController(IDatabaseManipulation databaseManipulation, IConfiguration configuration)
         {
-            _dateFromCategory = dateFromCategory;
+            _databaseManipulation = databaseManipulation;
             Configuration = configuration;
         }
         public IActionResult Products()
         {
             
             var maxAmountOfProducts = int.Parse(Configuration["MaximumAmountOfProducts"]);
-            var products = _dateFromCategory.ProductList;
+            var products = _databaseManipulation.ProductList;
             var maxProducts = products.Take(maxAmountOfProducts).ToList();
             if (maxAmountOfProducts == 0)
             {
@@ -45,8 +45,8 @@ namespace Northwind.MVC.Controllers
             ProductListViewModel viewModel = new ProductListViewModel
             {
                 Products = null,
-                Suppliers = _dateFromCategory.SupplierList,
-                Categories = _dateFromCategory.CategoryList
+                Suppliers = _databaseManipulation.SupplierList,
+                Categories = _databaseManipulation.CategoryList
             };
             return View("New", viewModel);
         }
@@ -55,7 +55,7 @@ namespace Northwind.MVC.Controllers
         public IActionResult New(Product product)
         {
 
-            _dateFromCategory.NewProduct(product);
+            _databaseManipulation.NewProduct(product);
             return RedirectToAction("Products");           
         }
         [HttpGet]
@@ -63,9 +63,9 @@ namespace Northwind.MVC.Controllers
         {
             ProductListViewModel viewModel = new ProductListViewModel
             {
-                Products = _dateFromCategory.ProductList.Where(p => p.ProductId == id).ToList(),
-                Suppliers = _dateFromCategory.SupplierList,
-                Categories = _dateFromCategory.CategoryList
+                Products = _databaseManipulation.ProductList.Where(p => p.ProductId == id).ToList(),
+                Suppliers = _databaseManipulation.SupplierList,
+                Categories = _databaseManipulation.CategoryList
             };
             return View("Update", viewModel);
         }
@@ -74,7 +74,7 @@ namespace Northwind.MVC.Controllers
         {            
             if (ModelState.IsValid)
             {
-                _dateFromCategory.UpdateProduct(product);
+                _databaseManipulation.UpdateProduct(product);
             }
             return RedirectToAction("Products");
         }

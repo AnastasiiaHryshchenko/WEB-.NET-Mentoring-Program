@@ -8,48 +8,47 @@ namespace NorthwindBL
 {
     public class DatabaseManipulation : IDatabaseManipulation
     {
-        NorthwindContext db = new NorthwindContext();
-        private List<Product> product;
+        readonly NorthwindContext _context;       
 
         public DatabaseManipulation(NorthwindContext context)
         {
-            db = context;
+            _context = context;
         }
        
         public List<Category> CategoryList
         {
-            get { return db.Categories.OrderBy(c => c.CategoryName).ToList(); }
+            get { return _context.Categories.OrderBy(c => c.CategoryName).ToList(); }
         }        
         public List<Product> ProductList
         {
-            get { return db.Products.Include(u => u.Category).Include(u => u.Supplier).ToList(); }
+            get { return _context.Products.Include(u => u.Category).Include(u => u.Supplier).ToList(); }
         }
 
         public List<Supplier> SupplierList
         {
-            get { return db.Suppliers.OrderBy(s => s.CompanyName).ToList(); }
+            get { return _context.Suppliers.OrderBy(s => s.CompanyName).ToList(); }
         }          
 
         public void NewProduct(Product product)
         {
-            db.Products.Add(product);
-            db.SaveChanges();
+            _context.Products.Add(product);
+            _context.SaveChanges();
         }
         public void UpdateProduct(Product product)
         {
-            db.Products.Update(product);
-            db.SaveChanges();
+            _context.Products.Update(product);
+            _context.SaveChanges();
         }
 
         public void UpdateCategory(Category category)
         {
-            db.Categories.Update(category);
-            db.SaveChanges();
+            _context.Categories.Update(category);
+            _context.SaveChanges();
         }
 
         public List<Category> FindImage(int id)
         {
-            return db.Categories.Where(c => c.CategoryId == id).ToList();       
+            return _context.Categories.Where(c => c.CategoryId == id).ToList();       
         }
     }
 }

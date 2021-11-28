@@ -43,35 +43,17 @@ namespace Northwind.MVC
         {
             loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logger.txt"));
             var logger = loggerFactory.CreateLogger("FileLogger");
-
-            //env.ApplicationName = "Production";
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
             else
             {
-                app.UseExceptionHandler(appError =>
-                {
-                    appError.Run(async context =>
-                    {
-                        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                        var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
-                        if (contextFeature != null)
-                        {
-                            logger.LogError($"Something went wrong: {contextFeature.Error}");
-                            await context.Response.WriteAsync(new ErrorDetails()
-                            {
-                                StatusCode = context.Response.StatusCode,
-                                Message = "Internal Server Error."
-                            }.ToString());
-                        }
-                    });
-                });
+                app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
-            app.UseMiddleware<ImageMiddleware>();
+            
             app.UseStaticFiles();
 
             app.UseRouting();

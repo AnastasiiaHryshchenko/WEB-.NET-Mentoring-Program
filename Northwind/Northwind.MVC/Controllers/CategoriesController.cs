@@ -13,16 +13,16 @@ namespace Northwind.MVC.Controllers
 {
     public class CategoriesController : Controller
     {
-        private readonly IDatabaseManipulation _dateFromCategory;
+        private readonly IDatabaseManipulation _databaseManipulation;
 
-        public CategoriesController(IDatabaseManipulation dateFromCategory)
+        public CategoriesController(IDatabaseManipulation databaseManipulation)
         {
-            _dateFromCategory = dateFromCategory;
+            _databaseManipulation = databaseManipulation;
         }
 
         public IActionResult Categories()
         {         
-            return View("Categories", _dateFromCategory.CategoryList);
+            return View("Categories", _databaseManipulation.CategoryList);
         }
         [HttpGet]
         [Route("Categories/Update/{id?}")]
@@ -33,7 +33,7 @@ namespace Northwind.MVC.Controllers
             {
                 Products = null,
                 Suppliers = null,
-                Categories = _dateFromCategory.CategoryList.Where(p => p.CategoryId == id).ToList()
+                Categories = _databaseManipulation.CategoryList.Where(p => p.CategoryId == id).ToList()
             };
             return View("Update", viewModel);
         }
@@ -41,8 +41,8 @@ namespace Northwind.MVC.Controllers
         [Route("Categories/Update/{id?}")]
         [Route("Categories/Update/images/{id?}")]
         public IActionResult Update(Category category)
-        {  
-            _dateFromCategory.UpdateCategory (category);            
+        {
+            _databaseManipulation.UpdateCategory (category);            
             return RedirectToAction("Categories");
         }
 
